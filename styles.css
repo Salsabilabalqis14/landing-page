@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rowdies:wght@700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -42,10 +43,6 @@ ul{
     color: #F1F4F4;
 }
 
-header{
-    margin-bottom: 4em;
-}
-
 .container{
     display: flex;
     justify-content: flex-start;
@@ -61,6 +58,7 @@ header{
     padding: 17px 0;
     font-size: 16px;
     height: 70px;
+    background-color: #F1F4F4;
 }
 
 .navbar .menu, .navbar .button-nav{
@@ -77,7 +75,7 @@ header{
 
 .container-hero{
     color: #fff;
-    background-color: #000;
+    background-color: #0A0D0D;
     padding-top: 52px;
     padding-bottom: 52px;
 }
@@ -100,7 +98,7 @@ header{
     /* animation: fadeIn 0.6s ease-in; */
 }
 
-.title{
+.headline{
     font-size: 48px;
     margin: 20px 0;
     line-height: 65px;
@@ -108,13 +106,13 @@ header{
     /* animation: slideUp 0.7s ease-in; */
 }
 
-.title span{
+.headline span{
     font-size: 64px;
     color: #FA9829;
     font-family: 'Rowdies', cursive;
 }
 
-.header-text p{
+#description {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
@@ -140,3 +138,229 @@ header{
     margin-right: 32px;
 }
 
+.container-keunggulan{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.keunggulan{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    align-items: center;
+}
+
+.content-title{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+}
+
+.content-title h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.content-title p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #4D4C4C;
+    width: 668px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.card{
+    text-align: center;
+    padding: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.card img{
+    width: 75px;
+    height: 75px;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card-text h4{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.card-text p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    width: 198px;
+    color: #6A6A6A;
+}
+
+.keunggulan-content{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.container-aboutUs{
+    background-color: #0A0D0D;
+    padding-top: 72px;
+    padding-bottom: 72px;
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 85px;
+}
+
+.aboutUs img{
+    width: 497px;
+    height: 497px;
+}
+
+.aboutUs-title{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #FFFFFF;
+}
+
+.aboutUs-title h6{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.aboutUs-title h2{
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 44px;
+}
+
+.aboutUs-text p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    text-align: justify;
+    color: #B3B2B2;
+}
+
+.aboutUs-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.aboutUs-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.testimoni{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.testimoni-content{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    align-items: center;
+    padding-right: 56px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.testimoni-content img{
+    width: 363px;
+    height: 340px;
+}
+
+.testimoni-content-text{
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.testimoni-content-text .top{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.testimoni-content-text .top img{
+    width: 24px;
+    height: 24px;
+}
+
+.testimoni-content-text .top p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.testimoni-content-text .bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.testimoni-content-text .bottom h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.testimoni-content-text .bottom p{
+    color: #2C3A3A;
+    font-size: 18px;
+}
+
+.container-matriks{
+    padding: 64px 72px;
+}
+
+.matriks{
+    background-color: #0A0D0D;
+    border-radius: 16px;
+    padding: 48px 88px;
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    justify-content: center;
+}
+
+.content-matriks{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+}
+
+.content-matriks h2{
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 54px;
+    color: #FFFFFF;
+}
+
+.content-matriks p{
+    color: #B3B2B2;
+}
