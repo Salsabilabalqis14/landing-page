@@ -43,12 +43,7 @@ ul{
     color: #F1F4F4;
 }
 
-.container{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-}
+/* Navbar */
 
 .navbar{
     display: flex;
@@ -61,6 +56,12 @@ ul{
     background-color: #F1F4F4;
 }
 
+#logo{
+    font-size: 32px;
+    font-family: 'Rowdies', cursive;
+    color: #FA9829;
+}
+
 .navbar .menu, .navbar .button-nav{
     display: flex;
     justify-content: space-between;
@@ -68,45 +69,30 @@ ul{
     gap: 40px;
 }
 
-.logo{
-    width: 85%;
-    height: 85%;
-}
-
-.container-hero{
+/* Hero Banner */
+#container-hero{
     color: #fff;
     background-color: #0A0D0D;
     padding-top: 52px;
     padding-bottom: 52px;
 }
 
-.header-body{
+#hero{
     display: flex;
     justify-content: space-between;
     gap: 140px;
     align-items: center;
 }
 
-.header-body .btn{
-    margin: 10px 0;
-    display: inline-block;
-}
-
-.banner img{
-    width: 430px;
-    height: 490px;
-    /* animation: fadeIn 0.6s ease-in; */
-}
-
-.headline{
+#headline{
     font-size: 48px;
-    margin: 20px 0;
+    margin-bottom: 16px;
     line-height: 65px;
     font-weight: 500;
     /* animation: slideUp 0.7s ease-in; */
 }
 
-.headline span{
+#headline span{
     font-size: 64px;
     color: #FA9829;
     font-family: 'Rowdies', cursive;
@@ -117,28 +103,33 @@ ul{
     line-height: 24px;
     font-weight: 400;
     color: #B3B2B2;
-    margin-top: 20px;
-    margin-bottom: 30px;
-}
-
-.header-text .btn-primary{
-    margin-right: 1em;
+    margin-bottom: 40px;
 }
 
 .button-hero{
     font-size: 18px;
     font-weight: 500;
-}
-
-.button-hero .btn{
-    width: 160px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
 }
 
 .button-hero .btn-secondary{
-    margin-right: 32px;
+    width: 160px;
 }
 
-.container-keunggulan{
+.button-hero .btn .btn-ghost{
+    width: 180px;
+}
+
+.banner img{
+    width: 430px;
+    height: 490px;
+    /* animation: fadeIn 0.6s ease-in; */
+}
+
+/* Keunggulan */
+#container-keunggulan{
     padding-top: 80px;
     padding-bottom: 80px;
 }
@@ -153,7 +144,7 @@ ul{
 .content-title{
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 18px;
     align-items: center;
 }
 
@@ -210,7 +201,102 @@ ul{
     gap: 40px;
 }
 
-.container-aboutUs{
+/* Program */
+#container-program{
+    padding-bottom: 80px;
+}
+
+#program{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+.program-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+}
+
+.card-kelas{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 24px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.card-kelas img{
+    width: 450px;
+    height: 280px;
+}
+
+.content-kelas{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.content-kelas-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.desc-top{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.desc-top h3{
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 120%;
+}
+
+.desc-top p{
+    width: 430px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.desc-benefit{
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.benefit-list{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+}
+
+.benefit-list img{
+    width: 24px;
+    height: 24px;
+}
+
+.content-kelas-text h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    color: #FF4D4F;
+}
+
+.content-kelas a{
+    width: 430px;
+}
+
+/* About Us */
+#container-aboutUs{
     background-color: #0A0D0D;
     padding-top: 72px;
     padding-bottom: 72px;
@@ -242,9 +328,11 @@ ul{
 }
 
 .aboutUs-title h2{
-    font-size: 40px;
+    font-size: 48px;
     font-weight: 700;
     line-height: 44px;
+    font-family: 'Rowdies', cursive;
+    color: #FA9829;
 }
 
 .aboutUs-text p{
@@ -268,6 +356,7 @@ ul{
     gap: 40px;
 }
 
+/* Testimoni */
 .testimoni{
     display: flex;
     flex-direction: column;
@@ -310,7 +399,7 @@ ul{
 }
 
 .testimoni-content-text .top p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     text-align: justify;
@@ -335,6 +424,7 @@ ul{
 
 .container-matriks{
     padding: 64px 72px;
+    padding-top: 0px;
 }
 
 .matriks{
@@ -363,4 +453,117 @@ ul{
 
 .content-matriks p{
     color: #B3B2B2;
+}
+
+/* Footer */
+#container-footer{
+    background-color: #0A0D0D;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#footer-content{
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    align-items: center;
+}
+
+#footer-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+#footer-text{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+#footer-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 44px;
+    font-family: 'Rowdies', cursive;
+    color: #FA9829;
+}
+
+#footer-text p{
+    width: 368px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+    color: #B3B2B2;
+}
+
+#footer-sosmed ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 36px;
+    text-align: center;
+}
+
+#footer-sosmed li{
+    padding: 10px;
+    height: 50px;
+}
+
+#footer-sosmed li:hover{
+    background-color: #FA9829;
+    border-radius: 100%;
+}
+
+#quick-link{
+    display: flex;
+    flex-direction: row;
+    gap: 136px;
+}
+
+.quick-link-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.quick-link-item h3{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 120%;
+}
+
+.link-item ul{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.link-item a{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #B3B2B2;
+}
+
+.link-item a:hover{
+    color: #FFFFFF;
+}
+
+/* Copy Right */
+#container-copy-right{
+    background-color: #0A0D0D;
+}
+
+hr{
+    background-color: #E2E9E9;
+    height: 2px;
+}
+
+#copy-right-text{
+    color: #FFFFFF;
+    padding: 24px 80px;
+    font-weight: 500;
 }
