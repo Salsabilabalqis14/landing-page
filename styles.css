@@ -12,7 +12,7 @@ a{
     color: black;
 }
 
-ul{
+li{
     list-style: none;
 }
 
@@ -24,13 +24,21 @@ ul{
 .btn{
     border-radius: 10px;
     padding: 16px 24px;
-    align-items: center;
     text-align: center;
+    transition: all 0.3s;
+}
+
+.btn:hover{
+    transform: scale(0.95);
 }
 
 .btn-primary{
-    background-color: #000;
+    background-color: #0A0D0D;
     color: #fff;
+}
+
+.btn-primary:hover{
+    border: 4px double #FFFFFF;
 }
 
 .btn-secondary{
@@ -38,22 +46,43 @@ ul{
     color: #000;
 }
 
+.btn-secondary:hover{
+    border: 4px double #0A0D0D;
+}
+
 .btn-ghost{
-    border: 2px solid #fff;
+    background: none;
+    border: 2px solid #F1F4F4;
     color: #F1F4F4;
 }
 
+.btn-ghost:hover{
+    background-color: #F1F4F4;
+    color: #000;
+}
+
+.btn-noBorder:hover{
+    color: #FA9829;
+}
+
 /* Navbar */
+
+#container-navbar{
+    position: sticky;
+	top: 0;
+    background-color: #FFFFFF;
+}
+
+#container-navbar.scrolled-down{
+    box-shadow: 0px 4px 15px rgba(67, 123, 213, 0.1);
+}
 
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    padding: 17px 0;
+    padding: 12px 0;
     font-size: 16px;
-    height: 70px;
-    background-color: #F1F4F4;
 }
 
 #logo{
@@ -69,6 +98,55 @@ ul{
     gap: 40px;
 }
 
+.menu a:hover{
+    color: #FA9829;
+    transition: all 0.3s;
+}
+
+.toggle-btn{
+    font-size: 30px;
+    display: none;
+}
+
+.dropDown-menu{
+    display: none;
+    position: absolute;
+    right: 80px;
+    top: 70px;
+    width: 300px;
+    height: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropDown-menu.open{
+    height: 480px;
+}
+
+.dropDown-menu li{
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dropDown-menu li a{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.dropDown-menu li a:hover{
+    color: #FA9829;
+    transition: all 0.3s;
+}
+
+.dropDown-menu .btn{
+    width: 100%;
+}
+
 /* Hero Banner */
 #container-hero{
     color: #fff;
@@ -79,8 +157,8 @@ ul{
 
 #hero{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 140px;
     align-items: center;
 }
 
@@ -104,6 +182,7 @@ ul{
     font-weight: 400;
     color: #B3B2B2;
     margin-bottom: 40px;
+    width: 580px;
 }
 
 .button-hero{
@@ -125,7 +204,6 @@ ul{
 .banner img{
     width: 430px;
     height: 490px;
-    /* animation: fadeIn 0.6s ease-in; */
 }
 
 /* Keunggulan */
@@ -162,6 +240,14 @@ ul{
     line-height: 25px;
 }
 
+.keunggulan-content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
 .card{
     text-align: center;
     padding: 24px;
@@ -195,11 +281,6 @@ ul{
     color: #6A6A6A;
 }
 
-.keunggulan-content{
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-}
 
 /* Program */
 #container-program{
@@ -212,9 +293,12 @@ ul{
     gap: 32px;
     align-items: center;
 }
+
 .program-cards{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     gap: 64px;
 }
 
@@ -229,7 +313,7 @@ ul{
 }
 
 .card-kelas img{
-    width: 450px;
+    width: cover;
     height: 280px;
 }
 
@@ -238,6 +322,7 @@ ul{
     flex-direction: column;
     gap: 32px;
     align-items: center;
+    padding: 0 20px;
 }
 
 .content-kelas-text{
@@ -266,7 +351,6 @@ ul{
 }
 
 .desc-benefit{
-    margin-top: 16px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -275,7 +359,7 @@ ul{
 .benefit-list{
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 12px;
     align-items: center;
 }
 
@@ -304,9 +388,11 @@ ul{
 
 .aboutUs{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 80px;
     align-items: center;
-    gap: 85px;
+    justify-content: center
 }
 
 .aboutUs img{
@@ -341,6 +427,7 @@ ul{
     line-height: 26px;
     text-align: justify;
     color: #B3B2B2;
+    width: 480px;
 }
 
 .aboutUs-text{
@@ -367,7 +454,7 @@ ul{
 
 .testimoni-content{
     display: flex;
-    flex-direction: row;
+    /* flex-wrap: wrap; */
     gap: 80px;
     align-items: center;
     padding-right: 56px;
@@ -377,7 +464,7 @@ ul{
 }
 
 .testimoni-content img{
-    width: 363px;
+    width: cover;
     height: 340px;
 }
 
@@ -422,6 +509,105 @@ ul{
     font-size: 18px;
 }
 
+/* Form */
+#join-us{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+
+#join-us img{
+    width: 500px;
+    height: cover;
+}
+
+#joinUs-content{
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+}
+
+#joinUs-content .content-title{
+    align-items: start;
+    gap: 8px;
+}
+
+#joinUs-content .content-title p{
+    text-align: start;
+}
+
+#content-form{
+    margin-top: 24px;
+}
+
+#content-form label{
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    width: auto;
+}
+
+#content-form input{
+    width: auto;
+    height: 52px;
+    padding: 12px 24px;
+    border: 2px solid #B3B2B2;
+    border-radius: 8px;
+}
+
+#content-form input::placeholder{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.list-form{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 16px;
+    width: 512px;
+}
+
+#konfirm{
+    width: 514px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin: 20px 0;
+}
+
+#konfirm #check{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+#konfirm #status{
+    width: 40px;
+    height: 40px;
+}
+
+#submit-form{
+    width: 524px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#warning{
+    margin-top: 16px;
+    color: #ffc686;
+    font-size: 22px;
+    font-weight: 500;
+}
+
+
+/* Matriks */
+
 .container-matriks{
     padding: 64px 72px;
     padding-top: 0px;
@@ -432,7 +618,7 @@ ul{
     border-radius: 16px;
     padding: 48px 88px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 128px;
     justify-content: center;
 }
@@ -464,7 +650,7 @@ ul{
 
 #footer-content{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 128px;
     align-items: center;
 }
@@ -518,7 +704,7 @@ ul{
 
 #quick-link{
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     gap: 136px;
 }
 
@@ -566,4 +752,25 @@ hr{
     color: #FFFFFF;
     padding: 24px 80px;
     font-weight: 500;
+}
+
+
+@media (max-width: 992px) {
+    #hero{
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .menu, .navbar .button-nav{
+        display: none;
+    }
+
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .dropDown-menu{
+        display: block;
+    }
 }

@@ -9,28 +9,41 @@
     <!-- Style CSS -->
     <link rel="stylesheet" href="styles.css">
 
-    <!-- Icon -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- Javascript -->
+    <script defer src="script.js"></script>
+
+    <!-- Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
 <body>
     <!-- Navbar -->
-    <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="index.html"><h1 id="logo">Remedial</h1></a>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Program</a></li>
-                    <li><a href="#">Kabar</a></li>
-                    <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Kelas</a></li>
-                </ul>
-                <div class="button-nav">
-                    <a href="#" class="btn">Sign In</a>
-                    <a href="#" class="btn btn-primary">Sign Up</a>
-                </div>
-            </nav>
+    <header class="container" id="container-navbar">
+        <nav class="navbar">
+            <a href="index.html"><h1 id="logo">Remedial</h1></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Program</a></li>
+                <li><a href="#">Kabar</a></li>
+                <li><a href="#">Tentang Kami</a></li>
+                <li><a href="#">Kelas</a></li>
+            </ul>
+            <div class="button-nav">
+                <a href="#" class="btn btn-noBorder">Sign In</a>
+                <a href="#" class="btn btn-primary">Sign Up</a>
+            </div>
+            <div class="toggle-btn">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+        <div class="dropDown-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Program</a></li>
+            <li><a href="#">Kabar</a></li>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Kelas</a></li>
+            <li><a href="#" class="btn btn-noBorder">Sign In</a></li>
+            <li><a href="#" class="btn btn-primary">Sign Up</a></li>
         </div>
     </header>
 
@@ -47,12 +60,12 @@
                         Setiap langkah kecil membawa Anda lebih dekat pada tujuan Anda.
                     </p>
                     <div class="button-hero">
-                        <a href="" class="btn btn-secondary">Daftar</a>
-                        <a href="" class="btn btn-ghost">More About Us</a>
+                        <a href="#container-program" class="btn btn-secondary">Daftar</a>
+                        <a href="#container-aboutUs" class="btn btn-ghost">More About Us</a>
                     </div>
                 </div>
                 <div class="banner">
-                    <img src="asset/hero.png" alt="banner">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/hero.png?raw=true" alt="banner">
                 </div>
             </section>
         </div>
@@ -69,28 +82,28 @@
             </div>
             <div class="keunggulan-content">
                 <div class="card">
-                    <img src="asset/keunggulan-1.png" alt="">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/keunggulan-1.png?raw=true" alt="">
                     <div class="card-text">
                         <h4>Expert Mentor</h4>
                         <p>Kami memiliki mentor yang ahli</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="asset/keunggulan-2.png" alt="">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/keunggulan-2.png?raw=true" alt="">
                     <div class="card-text">
                         <h4>Sertifikat</h4>
                         <p>Siswa akan mendapatkan sertifikat kelulusan</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="asset/keunggulan-3.png" alt="">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/keunggulan-3.png?raw=true" alt="">
                     <div class="card-text">
                         <h4>Konsultasi</h4>
                         <p>Kami akan memberikan konsultasi gratis</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="asset/keunggulan-4.png" alt="">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/keunggulan-4.png?raw=true" alt="">
                     <div class="card-text">
                         <h4>Komunitas</h4>
                         <p>Kami bergabung dengan komunitas seni</p>
@@ -111,7 +124,7 @@
             </div>
             <div class="program-cards">
                 <div class="card-kelas">
-                    <img src="asset/remedial-online.png" alt="">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/remedial-online.png?raw=true" alt="">
                     <div class="content-kelas">
                         <div class="content-kelas-text">
                             <div class="desc-top">
@@ -120,19 +133,19 @@
                             </div>
                             <div class="desc-benefit">
                                 <div class="benefit-list">
-                                    <img src="asset/book.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/book.svg" alt="">
                                     <p>Tersedia 10 Mata Pelajaran</p>
                                 </div>
                                 <div class="benefit-list">
-                                    <img src="asset/time.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/time.svg" alt="">
                                     <p>Belajar Lebih Fleksibel</p>
                                 </div>
                                 <div class="benefit-list">
-                                    <img src="asset/community.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/community.svg" alt="">
                                     <p>Forum Diskusi Online</p>
                                 </div>
                                 <div class="benefit-list">
-                                    <img src="asset/certificate.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/certificate.svg" alt="">
                                     <p>Sertifikat</p>
                                 </div>
                             </div>
@@ -142,7 +155,7 @@
                     </div>
                 </div>
                 <div class="card-kelas">
-                    <img src="asset/remedial-offline.png" alt="">
+                    <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/remedial-offline.png?raw=true" alt="">
                     <div class="content-kelas">
                         <div class="content-kelas-text">
                             <div class="desc-top">
@@ -151,19 +164,19 @@
                             </div>
                             <div class="desc-benefit">
                                 <div class="benefit-list">
-                                    <img src="asset/book.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/book.svg" alt="">
                                     <p>Tersedia 8 Mata Pelajaran</p>
                                 </div>
                                 <div class="benefit-list">
-                                    <img src="asset/location.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/location.svg" alt="">
                                     <p>Belajar di Ruang Kelas</p>
                                 </div>
                                 <div class="benefit-list">
-                                    <img src="asset/community.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/community.svg" alt="">
                                     <p>Interaksi Langsung dengan Mentor</p>
                                 </div>
                                 <div class="benefit-list">
-                                    <img src="asset/certificate.svg" alt="">
+                                    <img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/certificate.svg" alt="">
                                     <p>Sertifikat</p>
                                 </div>
                             </div>
@@ -179,7 +192,7 @@
     <!-- About US -->
     <div class="container" id="container-aboutUs">
         <section class="aboutUs">
-            <img src="asset/aboutUs.png" alt="">
+            <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/aboutUs.png?raw=true" alt="">
             <div class="aboutUs-content">
                 <div class="aboutUs-text">
                     <div class="aboutUs-title">
@@ -203,10 +216,10 @@
                 <p>Lihat testimoni siswa kami untuk mengetahui pengalaman mereka menggunakan layanan kami</p>
             </div>
             <div class="testimoni-content">
-                <img src="asset/student.png" alt="">
+                <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/student.png?raw=true" alt="">
                 <div class="testimoni-content-text">
                     <div class="top">
-                        <img src="asset/quotes.png" alt="">
+                        <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/quotes.png?raw=true" alt="">
                         <p>Pengalaman saya bergabung dengan program ini sangat menyenangkan. Tim Remedial memberikan layanan terbaik mereka. Saya merekomendasikan program ini bagi Anda yang ingin mempelajari keterampilan baru untuk masa depan.</p>
                     </div>
                     <div class="bottom">
@@ -217,6 +230,45 @@
             </div>
         </section>
     </div>
+
+    <!-- Form -->
+    <section id="join-us">
+        <div id="joinUs-content">
+            <div class="content-title">
+                <h2 class="title">
+                    Gabung dengan Kami
+                </h2>
+                <p id="pForm">Gabung dengan kami untuk melatih skillmu</p>
+            </div>
+            <div id="content-form">
+                <form action="">
+                    <div class="list-form">
+                        <label for="name">Nama</label>
+                        <input type="text" placeholder="Masukkan Nama" name="name" id="name"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="email">Email</label>
+                        <input type="email" placeholder="Masukkan Email" name="email" id="email"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="address">Kota</label>
+                        <input type="text" placeholder="Masukkan Kota" name="address" id="city"/>
+                    </div>
+                    <div class="list-form">
+                        <label for="zip-code">Kode Pos</label>
+                        <input type="number" placeholder="Masukkan Kode Pos" name="zip-code" id="zip-code"/>
+                    </div>
+                    <div id="konfirm">
+                        <label for="check" id="check">Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai</label>
+                        <input type="checkbox" name="status" id="status">
+                    </div>
+                    <button id="submit-form" type="submit" class="btn btn-primary">Submit</button>
+                    <div id="warning"></div>
+                </form>
+            </div>
+        </div>
+        <img src="https://github.com/Salsabilabalqis14/landing-page/blob/main/asset/joinUs.png?raw=true" alt="">
+    </section>
 
     <div class="container-matriks">
         <section class="matriks">
@@ -240,64 +292,62 @@
     </div>
 
     <!-- Footer -->
-    <div class="container" id="container-footer">
-        <footer>
-            <div id="footer-content">
-                <div id="footer-desc">
-                    <div id="footer-text">
-                        <h1>Remedial</h1>
-                        <p>Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun di 2019. Kegiatan berfokus pada pola konsumsi informasi dan pengetahuan berdasarkan perkembangan hari ini</p>
-                    </div>
-                    <div id="footer-sosmed">
+    <footer class="container" id="container-footer">
+        <div id="footer-content">
+            <div id="footer-desc">
+                <div id="footer-text">
+                    <h1>Remedial</h1>
+                    <p>Remedial merupakan kegiatan yang akan Serrum lakukan selama 1 tahun di 2019. Kegiatan berfokus pada pola konsumsi informasi dan pengetahuan berdasarkan perkembangan hari ini</p>
+                </div>
+                <div id="footer-sosmed">
+                    <ul>
+                        <li><a href=""><img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/facebook.svg" alt=""></a></li>
+                        <li><a href=""><img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/instagram.svg" alt=""></a></li>
+                        <li><a href=""><img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/email.svg" alt=""></a></li>
+                        <li><a href=""><img src="https://raw.githubusercontent.com/Salsabilabalqis14/landing-page/d3fa933d4e80a10aabec9827f6cca3c98a031429/asset/whatsapp.svg" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="quick-link">
+                <div class="quick-link-item">
+                    <h3>Discover</h3>
+                    <div class="link-item">
                         <ul>
-                            <li><a href=""><img src="asset/facebook.svg" alt=""></a></li>
-                            <li><a href=""><img src="asset/instagram.svg" alt=""></a></li>
-                            <li><a href=""><img src="asset/email.svg" alt=""></a></li>
-                            <li><a href=""><img src="asset/whatsapp.svg" alt=""></a></li>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Benefit</a></li>
+                            <li><a href="">Course</a></li>
+                            <li><a href="">Review</a></li>
+                            <li><a href="">Community</a></li>
                         </ul>
                     </div>
                 </div>
-                <div id="quick-link">
-                    <div class="quick-link-item">
-                        <h3>Discover</h3>
-                        <div class="link-item">
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Benefit</a></li>
-                                <li><a href="">Course</a></li>
-                                <li><a href="">Review</a></li>
-                                <li><a href="">Community</a></li>
-                            </ul>
-                        </div>
+                <div class="quick-link-item">
+                    <h3>Resources</h3>
+                    <div class="link-item">
+                        <ul>
+                            <li><a href="">Download</a></li>
+                            <li><a href="">Help Center</a></li>
+                            <li><a href="">Events</a></li>
+                            <li><a href="">Guides</a></li>
+                            <li><a href="https://skilvul.com/" id="link">Partner</a></li>
+                        </ul>
                     </div>
-                    <div class="quick-link-item">
-                        <h3>Resources</h3>
-                        <div class="link-item">
-                            <ul>
-                                <li><a href="">Download</a></li>
-                                <li><a href="">Help Center</a></li>
-                                <li><a href="">Events</a></li>
-                                <li><a href="">Guides</a></li>
-                                <li><a href="">Partner</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="quick-link-item">
-                        <h3>Company</h3>
-                        <div class="link-item">
-                            <ul>
-                                <li><a href="">About Us</a></li>
-                                <li><a href="">Contact US</a></li>
-                                <li><a href="">Programs</a></li>
-                                <li><a href="">Sign In</a></li>
-                                <li><a href="">Sign Up</a></li>
-                            </ul>
-                        </div>
+                </div>
+                <div class="quick-link-item">
+                    <h3>Company</h3>
+                    <div class="link-item">
+                        <ul>
+                            <li><a href="">About Us</a></li>
+                            <li><a href="">Contact US</a></li>
+                            <li><a href="">Programs</a></li>
+                            <li><a href="">Sign In</a></li>
+                            <li><a href="">Sign Up</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
 
     <!-- Copy Right -->
     <div id="container-copy-right">
@@ -306,6 +356,5 @@
             <p>Remedial Landing Website  -   © 2023 All Rights Reserved</p>
         </div>
     </div>
-
 </body>
 </html>
